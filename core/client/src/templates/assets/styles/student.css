@@ -347,6 +347,27 @@ header .logo {
     border:0.5em solid rgba(255,255,255,0.75);
     color:#FFF;
   }
+  form {
+    padding:3em;
+  }
+  form p {
+    margin-top:0.25em;
+  }
+  form .button {
+    border: 0.5em solid #f6f6f6;
+    margin-top:2em;
+    width:100%;
+  }
+  form input[type="text"],form textarea {
+    width:100%;
+    background-color:#FFF;
+    border:1px solid #eee;
+    border-radius:0.25em;
+    margin: 0.5em 0;
+    font-size:1.25em;
+    color:#666;
+    padding:0.5em;
+  }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 }
