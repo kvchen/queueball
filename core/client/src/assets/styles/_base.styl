@@ -1,0 +1,75 @@
+@import '_fonts'
+@import '_grid'
+
+
+// Helper functions
+
+fullwidth()
+  width: 100%
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+
+// Styles
+
+html
+  font-size: 62.5%
+
+body
+  font-size: 1.5em
+  line-height: 1.6
+  font-weight: 400
+  font-family: 'Lato', sans-serif
+  background-color: $bg
+
+
+button
+  border: none
+  cursor: pointer
+  display: inline-block
+  padding: 20px
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-weight: 700
+  outline: none
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    z-index: -1
+
+.btn-primary
+  background: $green
+  color: white
+  box-shadow: 0 6px darken(@background, 15%)
+
+  &:hover
+    box-shadow: 0 4px darken(@background, 15%)
+    -webkit-transform: translate(0, 2px)
+    transform: translate(0, 2px)
+
+  &:active
+    box-shadow: 0 0 darken(@background, 15%)
+    -webkit-transform: translate(0, 6px)
+    transform: translate(0, 6px)
+
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  border: 0 !important
+
+  padding: 10px 20px
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-weight: 700
+  border-radius: 0
+  
+  color: white
+  background: $blue
+
+textarea
+  padding: 13px
+  background-color: $bg

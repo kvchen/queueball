@@ -1,0 +1,5 @@
+# Configuration secrets and keys
+# These files should not be committed to the repository EVER!
+
+auth.js
+db.js

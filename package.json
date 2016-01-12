@@ -1,0 +1,57 @@
+{
+  "name": "queueball",
+  "version": "0.0.1",
+  "description": "a queueing system for office hours",
+  "main": "index.js",
+  "dependencies": {
+    "app-module-path": "^1.0.5",
+    "bookshelf": "^0.9.1",
+    "cookie": "^0.2.3",
+    "joi": "^7.1.0",
+    "knex": "^0.9.0",
+    "koa": "^2.0.0-alpha.3",
+    "koa-bodyparser": "^3.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-generic-session": "^1.10.1",
+    "koa-jade": "^2.0.2",
+    "koa-json": "^1.1.1",
+    "koa-passport": "^2.0.1",
+    "koa-redis": "^1.0.1",
+    "koa-router": "^7.0.0",
+    "koa-static": "^1.5.2",
+    "lodash": "^3.10.1",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^0.2.0",
+    "pg": "^4.4.3",
+    "socket.io": "^1.4.3",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "babel-plugin-transform-runtime": "^6.4.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-3": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-react": "^3.14.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node index",
+    "prod": "NODE_ENV=production node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "./node_modules/.bin/knex migrate:latest --knexfile core/server/config/db.js --cwd ./core/server",
+    "rollback": "./node_modules/.bin/knex migrate:rollback --knexfile core/server/config/db.js --cwd ./core/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvchen/queueball.git"
+  },
+  "author": "Kevin Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvchen/queueball/issues"
+  },
+  "homepage": "https://github.com/kvchen/queueball#readme"
+}

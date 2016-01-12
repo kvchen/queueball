@@ -1,0 +1,62 @@
+{
+  "name": "queueball-client",
+  "version": "0.0.1",
+  "description": "frontend for interacting with the queueball API",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack -wp --colors",
+    "dev": "webpack-dev-server --port 4000 --colors --inline --hot --quiet",
+    "build": "NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvchen/queueball-client.git"
+  },
+  "author": "Kevin Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvchen/queueball-client/issues"
+  },
+  "homepage": "https://github.com/kvchen/queueball-client#readme",
+  "dependencies": {
+    "highlight.js": "^9.1.0",
+    "identicon.js": "^1.0.0",
+    "lodash": "^3.10.1",
+    "marked": "^0.3.5",
+    "normalize.css": "^3.0.3",
+    "socket.io-client": "^1.4.0",
+    "stylus": "^0.53.0",
+    "vue": "^1.0.13",
+    "vue-resource": "^0.6.0",
+    "vue-router": "^0.7.7",
+    "vue-validator": "^1.4.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-3": "^6.3.13",
+    "babel-runtime": "^5.8.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.0.0",
+    "eslint-config-standard": "^4.4.0",
+    "eslint-plugin-react": "^3.14.0",
+    "eslint-plugin-standard": "^1.3.1",
+    "file-loader": "^0.8.5",
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.3",
+    "template-html-loader": "0.0.3",
+    "vue-hot-reload-api": "^1.2.2",
+    "vue-html-loader": "^1.1.0",
+    "vue-loader": "^8.0.1",
+    "vue-resource": "^0.6.0",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
