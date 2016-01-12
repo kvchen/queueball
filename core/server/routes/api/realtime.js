@@ -6,7 +6,7 @@ import io from 'server/lib/socketio';
 
 import Assignment from 'server/models/assignment';
 import Ticket from 'server/models/ticket';
-import User from 'server/models/users';
+import User from 'server/models/user';
 
 
 // import { getMetric } from 'app/controllers/metrics';

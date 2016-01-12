@@ -13,9 +13,9 @@ io.use(async function attachSession(socket, next) {
   const sid = cookie.parse(socket.handshake.headers.cookie)['koa.sid'];
   const session = await store.client.get(`koa:sess:${ sid }`);
 
-  socket.session = session;
+  socket.session = JSON.parse(session);
   next(null, true);
 });
 
 
-module.exports = new Server();
+module.exports = io;

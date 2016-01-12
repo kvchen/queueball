@@ -11,7 +11,7 @@ const store = {
 
 
 socket.on('refresh_state', function refreshState(data) {
-  console.log('got here');
+  console.log(data);
   store.assignments = data.assignments;
   store.tickets = data.tickets;
   store.connectedUsers = data.connectedUsers;
@@ -27,7 +27,7 @@ socket.on('assignment_created', function addAssignment(assignment) {
 });
 
 socket.on('assignment_updated', function updateAssignment(assignment) {
-  const idx = _.findIndex(store.assignments, { 'id': assignment.id });
+  const idx = _.findIndex(store.assignments, 'id', assignment.id);
   store.assignments[idx] = assignment;
 });
 
@@ -45,7 +45,7 @@ socket.on('ticket_created', function addTicket(ticket) {
 });
 
 socket.on('ticket_updated', function updateTicket(ticket) {
-  const idx = _.findIndex(store.tickets, { 'id': ticket.id });
+  const idx = _.findIndex(store.tickets, 'id', ticket.id);
   store.tickets[idx] = ticket;
 });
 

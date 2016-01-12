@@ -3,6 +3,7 @@ import Router from 'koa-router';
 import logger from 'server/lib/logger';
 import assignments from 'server/routes/api/assignments';
 import tickets from 'server/routes/api/tickets';
+import 'server/routes/api/realtime';
 
 const router = new Router();
 
