@@ -11,15 +11,13 @@
   <body>
     <header>
       <div class="left col-md-2">
-        <div class="stripes">
-          <div class="stripe"></div>
-          <div class="stripe"></div>
-          <div class="stripe"></div>
+        <div class="header-text">
+          <span><a href="http://okpy.org">Ok</a></span>
         </div>
       </div>
       <div class="right col-md-2">
         <div class="header-text user-profile">
-          <span class="user-name">Chikin Park</span>
+          <span class="user-name">Kevin the Bae</span>
           <i class="fa fa-user"></i>
         </div>
       </div>
@@ -27,70 +25,85 @@
     <div class="header-bg"></div>
     <main>
       <aside class="sidebar nomapa col-md-4 left hidden-sm hidden-xs">
-        <div class="software-logo">
-          <img src="assets/images/logo.svg">
-          <p class="software-name">Ok Autograder</p>
-        </div>
-        <li class="sidebar-title">Announcements</li>
-        <ul class="staff">
-          <li class="top-level"><i class="fa fa-bullhorn"></i><div class="list-item">Project 1 has been released! <span>See cs61a.org.</span></div></li>
-          <li class="top-level"><i class="fa fa-bullhorn"></i><div class="list-item">Superhuman Sumukh saved the day, yet again! <span>Ok has been resurrected.</span></div></li>
-        </ul>
+        <form>
+          <input type="text">
+          <textarea></textarea>
+          <input type="submit" class="button">
+        </form>
       </aside>
       <div class="col-md-4"></div>
       <section class="content nomapa col-md-8">
         <div class="subcontent heading">
           <div class="wrap">
-            <h1>Courses</h1>
+            <h1>Queue</h1>
           </div>
         </div>
         <div class="subcontent list">
           <div class="wrap">
-            <h2>Current Courses</h2>
+            <!-- <h2>Current Courses</h2> if you want a subheading -->
             <table>
-              <tr class="header"><th>Name</th><th>Byline</th><th>Current Assignments</th></tr>
+              <tr class="header"><th>Name</th><th>Assignment</th><th>Question</th><th>Time</th></tr>
               <tr>
-                <td><span><a href="course.html">CS61A</a></span></td>
-                <td class="tip-trigger"><span>Structure and Interpre...
+                <td><span>Kevin the Bae</span></td>
+                <td class="tip-trigger"><span>Homework 1
                   <div class="tip group-members">
-                    <span>Structure and Interpretation of Computer Programs</span>
+                    <span>Homework 1 : Iterators and Generators</span>
+                  </div>
+                </span></td>
+                <td class="tip-trigger"><span>Q3
+                  <div class="tip group-members">
+                    <span>Q3: Scrambled Eggs</span>
                   </div>
                 </span></td>
                 <td>
                   <div class="due-dot green"></div>
                   <div class="due">
-                    <span class="due-text green">Submitted</span>
-                    <span class="due-date">2 of 2 submitted</span>
+                    <span class="due-text green">10 minutes</span>
+                    <span class="due-date">submitted 2:10 p.m.</span>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td><span><a href="course.html">CS61A</a></span></td>
-                <td class="tip-trigger"><span>Structure and Interpre...
+                <td><span>Kevin the Bae</span></td>
+                <td class="tip-trigger"><span>Homework 1
                   <div class="tip group-members">
-                    <span>Structure and Interpretation of Computer Programs</span>
+                    <span>Homework 1 : Iterators and Generators</span>
+                  </div>
+                </span></td>
+                <td class="tip-trigger"><span>Q3
+                  <div class="tip group-members">
+                    <span>Q3: Scrambled Eggs</span>
                   </div>
                 </span></td>
                 <td>
                   <div class="due-dot yellow"></div>
                   <div class="due">
-                    <span class="due-text yellow">Partial</span>
-                    <span class="due-date">1 of 3 submitted</span>
+                    <span class="due-text yellow">1 hour</span>
+                    <span class="due-date">submitted 1:20 p.m.</span>
                   </div>
                 </td>
               </tr>
-            </table>
-          </div>
-        </div>
-        <div class="subcontent list">
-          <div class="wrap">
-            <h2>Past Courses</h2>
-            <table>
-              <tr class="header"><th>Name</th><th>Byline</th></tr>
               <tr>
-                <td><span><a href="course.html">CS61A</a></span></td>
-                <td><span>Structure and Interpretation of Computer Programs</span></td>
+                <td><span>Kevin the Bae</span></td>
+                <td class="tip-trigger"><span>Homework 1
+                  <div class="tip group-members">
+                    <span>Homework 1 : Iterators and Generators</span>
+                  </div>
+                </span></td>
+                <td class="tip-trigger"><span>Q3
+                  <div class="tip group-members">
+                    <span>Q3: Scrambled Eggs</span>
+                  </div>
+                </span></td>
+                <td>
+                  <div class="due-dot red"></div>
+                  <div class="due">
+                    <span class="due-text red">2 hours</span>
+                    <span class="due-date">submitted 12:20 p.m.</span>
+                  </div>
+                </td>
               </tr>
+
             </table>
           </div>
         </div>
