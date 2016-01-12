@@ -1,4 +1,5 @@
 import bookshelf from 'server/lib/db';
+import Ticket from 'server/models/ticket';
 
 
 const User = bookshelf.Model.extend({
@@ -16,7 +17,8 @@ const User = bookshelf.Model.extend({
   },
   async activeTickets() {
     const id = this.get('id');
-    const tickets = await this
+
+    const tickets = await Ticket
       .query(function getActiveTickets(qb) {
         return qb.where('studentId', id)
           .orWhere('assistantId', id)
